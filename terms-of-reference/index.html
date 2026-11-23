@@ -100,6 +100,105 @@ header .menu a:hover,
 .main-navigation .current-menu-item > a {
   color: #eeeeee !important;
 }
+
+/* ===== HEALTHWISE GREEN THEME ===== */
+
+:root {
+  --nv-primary-accent: #2E7D52;
+  --nv-secondary-accent: #1C4A30;
+  --nv-site-bg: #F6F8F6;
+  --nv-light-bg: #EAF3EE;
+  --nv-text-color: #3D5045;
+  --nv-c-1: #174028;
+  --e-global-color-primary: #174028;
+  --e-global-color-secondary: #2E7D52;
+  --e-global-color-text: #3D5045;
+  --e-global-color-accent: #2E7D52;
+  --e-global-color-nvprimaryaccent: #2E7D52;
+  --e-global-color-nvsecondaryaccent: #1C4A30;
+  --e-global-color-nvsitebg: #F6F8F6;
+  --e-global-color-nvlightbg: #EAF3EE;
+  --e-global-color-nvtextcolor: #3D5045;
+  --e-global-color-nvc1: #174028;
+}
+
+.elementor-kit-105 {
+  --e-global-color-primary: #174028;
+  --e-global-color-secondary: #2E7D52;
+  --e-global-color-text: #3D5045;
+  --e-global-color-accent: #2E7D52;
+  --e-global-color-nvprimaryaccent: #2E7D52;
+  --e-global-color-nvsecondaryaccent: #1C4A30;
+  --e-global-color-nvsitebg: #FFFFFF;
+  --e-global-color-nvlightbg: #EAF3EE;
+  --e-global-color-nvtextcolor: #3D5045;
+  --e-global-color-nvc1: #174028;
+}
+
+.header, .hfg-layout, .site-header, .hfg-row,
+.header--row, .header--row-inner, .header-menu-sidebar-bg {
+  background: var(--e-global-color-primary) !important;
+}
+
+.nav-ul a, .nav-ul a:visited, .nav-ul a:hover, .nav-ul a:focus, .nav-ul a:active,
+.nav-ul .current-menu-item > .wrap > a,
+.header-menu-sidebar a, .hfg-slot a {
+  color: #FFFFFF !important;
+  font-family: var(--e-global-typography-text-font-family), var(--bodyfontfamily), sans-serif !important;
+  font-size: 1.1em !important;
+  padding-right: 12px !important;
+}
+
+html, body, .site, .site-main, .elementor-page {
+  background-color: #FFFFFF !important;
+}
+
+body.elementor-page:not(.elementor-motion-effects-element-type-background),
+body.elementor-page > .elementor-motion-effects-container > .elementor-motion-effects-layer {
+  background-color: #FFFFFF !important;
+  background-image: none !important;
+}
+
+h1, h2, h3, h4 {
+  color: #174028 !important;
+}
+
+p, li {
+  color: #3D5045 !important;
+}
+
+.elementor-8 .elementor-element.elementor-element-b5b9e43 span {
+  color: var(--e-global-color-text) !important;
+}
+
+a { color: #2E7D52 !important; }
+a:hover { color: #1C4A30 !important; }
+
+.button, .btn, .wp-block-button__link,
+input[type="submit"] {
+  background-color: #2E7D52 !important;
+  color: #FFFFFF !important;
+  border-color: #2E7D52 !important;
+}
+
+.wp-block-group:nth-of-type(even) {
+  background-color: #EAF3EE !important;
+}
+
+.site-footer, .footer-wrap {
+  background-color: #174028 !important;
+  color: rgba(255,255,255,0.8) !important;
+}
+
+.site-footer a { color: #7EC8A0 !important; }
+
+/* Keep logo backgrounds white */
+img { background: transparent; }
+.wp-block-image img {
+  background: #FFFFFF;
+  padding: 6px;
+  border-radius: 4px;
+}
 </style>
 
 	</head>
@@ -120,14 +219,14 @@ header .menu a:hover,
 				<div class="hfg-slot left"><div class="builder-item desktop-left"><div class="item--inner builder-item--logo" data-section="title_tagline" data-item-id="logo">
 	
 <div class="site-logo">
-	<a class="brand" href="/" aria-label="HEALTHWISE" rel="home"><img fetchpriority="high" width="813" height="651" src="/wp-content/uploads/2024/05/logo-white-copy-1.png" class="neve-site-logo skip-lazy" alt="" data-variant="logo" decoding="async" srcset="/wp-content/uploads/2024/05/logo-white-copy-1.png 813w, /wp-content/uploads/2024/05/logo-white-copy-1-300x240.png 300w, /wp-content/uploads/2024/05/logo-white-copy-1-768x615.png 768w" sizes="(max-width: 813px) 100vw, 813px"></a></div>
+	<span class="brand" role="img" aria-label="HEALTHWISE"><img fetchpriority="high" width="813" height="651" src="/wp-content/uploads/2024/05/logo-white-copy-1.png" class="neve-site-logo skip-lazy" alt="" data-variant="logo" decoding="async" srcset="/wp-content/uploads/2024/05/logo-white-copy-1.png 813w, /wp-content/uploads/2024/05/logo-white-copy-1-300x240.png 300w, /wp-content/uploads/2024/05/logo-white-copy-1-768x615.png 768w" sizes="(max-width: 813px) 100vw, 813px"></span></div>
 	</div>
 
 </div></div><div class="hfg-slot right"><div class="builder-item has-nav"><div class="item--inner builder-item--primary-menu has_menu" data-section="header_menu_primary" data-item-id="primary-menu">
 	<div class="nv-nav-wrap">
 	<div role="navigation" class="nav-menu-primary" aria-label="Primary Menu">
 
-		<ul id="nv-primary-navigation-main" class="primary-menu-ul nav-ul menu-desktop"><li id="menu-item-261" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-251 current_page_item menu-item-261 nv-active"><div class="wrap"><a href="/terms-of-reference/" aria-current="page">Terms of Reference</a></div></li>
+		<ul id="nv-primary-navigation-main" class="primary-menu-ul nav-ul menu-desktop"><li class="menu-item menu-item-homepage"><div class="wrap"><a class="homepage-header-button" href="/">Homepage</a></div></li><li id="menu-item-261" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-251 current_page_item menu-item-261 nv-active"><div class="wrap"><a href="/terms-of-reference/" aria-current="page">Terms of Reference</a></div></li>
 </ul>	</div>
 </div>
 
@@ -147,7 +246,7 @@ header .menu a:hover,
 				<div class="hfg-slot left"><div class="builder-item tablet-left mobile-left"><div class="item--inner builder-item--logo" data-section="title_tagline" data-item-id="logo">
 	
 <div class="site-logo">
-	<a class="brand" href="/" aria-label="HEALTHWISE" rel="home"><img fetchpriority="high" width="813" height="651" src="/wp-content/uploads/2024/05/logo-white-copy-1.png" class="neve-site-logo skip-lazy" alt="" data-variant="logo" decoding="async" srcset="/wp-content/uploads/2024/05/logo-white-copy-1.png 813w, /wp-content/uploads/2024/05/logo-white-copy-1-300x240.png 300w, /wp-content/uploads/2024/05/logo-white-copy-1-768x615.png 768w" sizes="(max-width: 813px) 100vw, 813px"></a></div>
+	<span class="brand" role="img" aria-label="HEALTHWISE"><img fetchpriority="high" width="813" height="651" src="/wp-content/uploads/2024/05/logo-white-copy-1.png" class="neve-site-logo skip-lazy" alt="" data-variant="logo" decoding="async" srcset="/wp-content/uploads/2024/05/logo-white-copy-1.png 813w, /wp-content/uploads/2024/05/logo-white-copy-1-300x240.png 300w, /wp-content/uploads/2024/05/logo-white-copy-1-768x615.png 768w" sizes="(max-width: 813px) 100vw, 813px"></span></div>
 	</div>
 
 </div></div><div class="hfg-slot right"><div class="builder-item tablet-left mobile-left"><div class="item--inner builder-item--nav-icon" data-section="header_menu_icon" data-item-id="nav-icon">
@@ -188,7 +287,7 @@ header .menu a:hover,
 	<div class="nv-nav-wrap">
 	<div role="navigation" class="nav-menu-primary" aria-label="Primary Menu">
 
-		<ul id="nv-primary-navigation-sidebar" class="primary-menu-ul nav-ul menu-mobile"><li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-251 current_page_item menu-item-261 nv-active"><div class="wrap"><a href="/terms-of-reference/" aria-current="page">Terms of Reference</a></div></li>
+		<ul id="nv-primary-navigation-sidebar" class="primary-menu-ul nav-ul menu-mobile"><li class="menu-item menu-item-homepage"><div class="wrap"><a class="homepage-header-button" href="/">Homepage</a></div></li><li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-251 current_page_item menu-item-261 nv-active"><div class="wrap"><a href="/terms-of-reference/" aria-current="page">Terms of Reference</a></div></li>
 </ul>	</div>
 </div>
 
@@ -290,19 +389,7 @@ header .menu a:hover,
 
 </main><!--/.neve-main-->
 
-<button tabindex="0" id="scroll-to-top" class="scroll-to-top scroll-to-top-right  scroll-show-mobile icon" aria-label="Scroll To Top"><svg class="scroll-to-top-icon" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewbox="0 0 15 15"><rect width="15" height="15" fill="none"></rect><path fill="currentColor" d="M2,8.48l-.65-.65a.71.71,0,0,1,0-1L7,1.14a.72.72,0,0,1,1,0l5.69,5.7a.71.71,0,0,1,0,1L13,8.48a.71.71,0,0,1-1,0L8.67,4.94v8.42a.7.7,0,0,1-.7.7H7a.7.7,0,0,1-.7-.7V4.94L3,8.47a.7.7,0,0,1-1,0Z"></path></svg></button><footer class="site-footer" id="site-footer">
-	<div class="hfg_footer">
-		<div class="footer--row footer-bottom layout-full-contained" id="cb-row--footer-desktop-bottom" data-row-id="bottom" data-show-on="desktop">
-	<div class="footer--row-inner footer-bottom-inner footer-content-wrap">
-		<div class="container">
-			<div class="hfg-grid nv-footer-content hfg-grid-bottom row--wrapper row " data-section="hfg_footer_layout_bottom">
-				<div class="hfg-slot left"><div class="builder-item cr"><div class="item--inner"><div class="component-wrap"><div><p><a href="https://themeisle.com/themes/neve/" rel="nofollow">Neve</a> | Powered by <a href="https://wordpress.org/" rel="nofollow">WordPress</a></p></div></div></div></div></div><div class="hfg-slot c-left"></div><div class="hfg-slot center"></div>							</div>
-		</div>
-	</div>
-</div>
-
-	</div>
-</footer>
+<button tabindex="0" id="scroll-to-top" class="scroll-to-top scroll-to-top-right  scroll-show-mobile icon" aria-label="Scroll To Top"><svg class="scroll-to-top-icon" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewbox="0 0 15 15"><rect width="15" height="15" fill="none"></rect><path fill="currentColor" d="M2,8.48l-.65-.65a.71.71,0,0,1,0-1L7,1.14a.72.72,0,0,1,1,0l5.69,5.7a.71.71,0,0,1,0,1L13,8.48a.71.71,0,0,1-1,0L8.67,4.94v8.42a.7.7,0,0,1-.7.7H7a.7.7,0,0,1-.7-.7V4.94L3,8.47a.7.7,0,0,1-1,0Z"></path></svg></button>
 
 </div><!--/.wrapper-->
 <script type="speculationrules">
